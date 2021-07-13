@@ -4,15 +4,15 @@ Microsoft Engage Mentorship 2021 task
 
 Simple Web Application that offer you to create video meeting room using WebRTC and Socket
 
-## Before you use on your local computer
+> ## Before you use on your local computer
 
 These instructions will help you run my app on your local system.
 
-### Prerequisites (Important)
+> ## Prerequisites (Important)
 
 You have to install [Node.js](https://nodejs.org/en/) in your machine.
 
-### Installing
+> ## Installing
 
 After installing node clone the repo by using git
 
@@ -30,7 +30,7 @@ npm i nodemon
 
 ```
 
-## Running the App
+> ## Running the App
 
 In your cli do the following
 
@@ -41,13 +41,13 @@ nodemon server.js
 
 ```
 
-## Deployment
+> ## Deployment
 
 For deploy the project I use [heroku](https://heroku.com)
 
 [We-meet](https://we-meet-peeps.herokuapp.com/)
 
-## Tech Stack/ Frameworks Used
+> ## Tech Stack/ Frameworks Used
 
 -   [Node Js](https://nodejs.org/en/) - The Backend
 -   [Peer JS](https://peerjs.com/) - PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls.
@@ -55,11 +55,12 @@ For deploy the project I use [heroku](https://heroku.com)
 -   [NPM](https://www.npmjs.com/) - Dependency Management
 -   [GIT](https://git-scm.com/) - Used for version control
 -   [Heroku](https://heroku.com) - Used to Deploy Node.js applications
+-   I have also used Mongodb Atlas for the database.
 
 
 <!-- This is a blockquote -->
 
->Features
+> **Features
 * User Authentication
 * Group Video Calling Features
 * Join the meeting by pasting the meeting link.
