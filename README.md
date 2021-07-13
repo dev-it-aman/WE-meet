@@ -76,3 +76,6 @@ For deploy the project I use [heroku](https://heroku.com)
 Note: To know better about how to use the app, follow this [ppt](https://drive.google.com/file/d/1vZlflUNOfekE3zpmkqevnge-wzn125jJ/view?usp=sharing)
  or
  you can use this [video demo](https://drive.google.com/file/d/1C0HzmmDXAip5_hpMyUtCPVvGtNImGB6u/view?usp=sharing)
+ 
+ ** Note: If after running for the first time, if gives not able to deserilaize related error. 
+    Dont worry just repeat the node server.js command once again it will work.
