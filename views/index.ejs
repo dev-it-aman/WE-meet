@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid nav-contcnt">
+        <a class="navbar-brand" href="#" style="color: #5F6368;"> <span style="font-weight: bold;">WE</span> Meet</a>
+        <div class="d-flex">
+            <p class="m-0 px-3" style="font-weight: bold; color: #5F6368;">
+                <%= user.name %>
+            </p>
+            <a class="icon" href="#">
+                <ion-icon name="help-circle-outline"></ion-icon>
+            </a>
+            <a class="icon" href="#">
+                <ion-icon name="alert-circle-outline"></ion-icon>
+            </a>
+            <a class="icon" href="#">
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+            <a class="icon" href="/logout">
+                <ion-icon name="exit-outline"></ion-icon>
+            </a>
+        </div>
+        <style>
+            @media (max-width: 440px) {
+                .nav-contcnt {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .new-meeting {
+                    width: 124px;
+                    white-space: nowrap;
+                }
+            }
+
+            .icon {
+                text-decoration: none;
+                color: #5F6368;
+                padding: 0rem .25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: .25rem;
+                margin: 0rem .35rem;
+            }
+
+            .icon:hover {
+                background-color: rgb(197, 197, 197);
+                color: #5F6368;
+            }
+
+            .icon ion-icon {
+                font-size: 1.7rem;
+            }
+        </style>
+    </div>
+</nav>
+<div class="container py-5">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <h1 class="mb-3">
+                 WE-Meet <br />
+                 Video meetings! Now free for everyone!
+            </h1>
+            <p style="color: #5F6368;">Meet, chat, call, and collaborate in just one place.</p>
+            <div class="a123 my-5" style="display: flex; ">
+                <a class="btn btn-primary new-meeting" style="width: 180px;" href="/new-meeting" role="button">Start New
+                    Meeting</a>
+                <form action="join-room" style="margin-left: 1rem;" method="POST">
+                    <div class="input-group ">
+                        <span class="input-group-text" id="inputGroup-sizing-default">
+                            <ion-icon name="planet-outline"></ion-icon>
+                        </span>
+                        <input name="room_id" type="text" class="form-control" placeholder="Enter the code"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn no-bg" type="submit" id="button-addon2">Join</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <p><a href="#" style="text-decoration: none;">Learn more about</a> US</p>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="box-shadow: 0 0 5px #b8b8b8;">
+                <div class="card-body">
+                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWDeEK?ver=e1e6&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF&aim=true"
+                width="100%" class="rounded" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

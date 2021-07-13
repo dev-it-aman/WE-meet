@@ -1,0 +1,15 @@
+router.post('/login', (req, res) => {
+    passport.authenticate('local', function (err, user, info) {
+        if (err) {
+            return res.status(401).json(err);
+        }
+        if (user) {
+            const token = user.generateJwt();
+            return res.status(200).json({
+                "token": token
+            });
+        } else {
+            res.status(401).json(info);
+        }
+    })(req, res, next)
+})
