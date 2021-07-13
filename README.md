@@ -60,7 +60,7 @@ For deploy the project I use [heroku](https://heroku.com)
 
 <!-- This is a blockquote -->
 
-> **Features
+> ## Features
 * User Authentication
 * Group Video Calling Features
 * Join the meeting by pasting the meeting link.
